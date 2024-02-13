@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 웹폰트링크1 -->
+    <script type="module"
+        src="https://8fl3k30sy0.execute-api.ap-northeast-2.amazonaws.com/v1/api/fontstream/djs/?sid=gAAAAABlt8eAq5boLnwHnqiThhONDTvODUMKZqGoaBVenG_PwuUBvpZ5aY71zu2u-iqhffTwqJ663ng__vGVM0OVyhpl4f07oCSqLhGvo_GFX3YT53IONTBycJU3oD1G_kfShonhHHht_KoEHqS__8aIxyN6h4Oyv3P6xDO6LRLiIJ7VsKk3zOiG5-NXNFluSGkEO9P-HCglL6SheBOsoa5B9VYL6YsfS_loUSkyo0oBJDKE4zOgAg59rN8grGdC0LXDaOfBit1-"
+        charset="utf-8"></script>
+    <!-- 구글웹폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <!-- css animation 링크 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>chzzk</title>
+    <script>
+        $(document).ready(function () {
+
+
+            // // smooth scrolling of viewport to target
+            // $('a[href^="#"]').click(function (event) {
+            //     event.preventDefault();
+            //     $('html,body').animate({
+            //         scrollTop: $(this.hash).offset().top - 50
+            //     }, 900);
+            // });
+
+            $('#arrow').click(function () {
+                $('html,body').animate({
+                    scrollTop: $('.title1box').offset().top - 50
+                }, 500);
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".path").slice(0, 12).fadeIn();
+            $("#more1").click(function () {
+                $(".path:hidden").slice(0, 12).slideDown();
+
+                if ($(".path:hidden").length == 0) {
+                    $("#more1").css({ "display": "none" });
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="mainpage">
+        <div id=container>
+            <!-- 치지직로고 -->
+            <div>
+                <svg width="160" height="50" viewBox="0 0 96 26" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <path d="M20.8469 6.15599L18.4029 19.844H23.3025L25.7427 6.15599H20.8469Z" fill="white"></path>
+                    <path
+                        d="M27.4327 6.15599L26.7791 9.81581H32.75L24.9886 19.844H30.5573L34.7841 14.381L33.8096 19.844H38.7054L39.9274 13.0019H35.8515L41.1495 6.15599H27.4327Z"
+                        fill="white"></path>
+                    <path
+                        d="M19.157 6.15599H13.5921L16.4229 2.5H10.8581L5.56005 9.34209H11.1288L3 19.844H8.5687L12.7955 14.381L11.821 19.844H16.7168L17.9388 13.0019H13.8628L19.157 6.15599Z"
+                        fill="white"></path>
+                    <path d="M42.8394 6.15599L40.3954 19.844H45.2912L47.7352 6.15599H42.8394Z" fill="white"></path>
+                    <path
+                        d="M49.4213 6.15599L48.7716 9.81581H54.7077L46.9811 19.844H52.546L56.7225 14.423L55.7557 19.844H60.6554L61.8774 13.0019H57.8208L63.0955 6.15599H49.4213Z"
+                        fill="white"></path>
+                    <path
+                        d="M67.8328 16.1842L69.6233 6.15599H64.7275L62.2834 19.844H65.4506L64.7971 23.5H69.6968L71 16.1842H67.8328Z"
+                        fill="white"></path>
+                </svg>
+                <span style="font-size: 25px;">에서</span>
+            </div>
+            <div id=flip>
+                <div class="streamerbx">
+                    <div class="streamers">
+                        <div class="circle" id="profile1"><em class="partner_badge__1eb73"><svg width="20" height="7"
+                                    viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.5918 9.94881V12.4211H0.177979V0.368866H3.38116V9.94881H8.5918ZM13.8997 0.368866V12.4211H10.6965V0.368866H13.8997ZM23.7898 12.4211L27.8047 0.368866H24.296L21.8783 9.42263H21.8085L19.3821 0.368866H15.7425L19.7574 12.4211H23.7898ZM38.2796 9.94881V12.4211H29.6475V0.368866H38.2796V2.84111H32.8507V5.23819H37.9566V7.49327H32.8507V9.94881H38.2796Z"
+                                        fill="white"></path>
+                                </svg><span class="blind">LIVE</span></em></div><span class="streamerstitle">멋사</span>
+                    </div>
+                </div>
+                <div class="streamerbx">
+                    <div class="streamers">
+                        <div class="circle" id="profile2"><em class="partner_badge__1eb73"><svg width="20" height="7"
+                                    viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.5918 9.94881V12.4211H0.177979V0.368866H3.38116V9.94881H8.5918ZM13.8997 0.368866V12.4211H10.6965V0.368866H13.8997ZM23.7898 12.4211L27.8047 0.368866H24.296L21.8783 9.42263H21.8085L19.3821 0.368866H15.7425L19.7574 12.4211H23.7898ZM38.2796 9.94881V12.4211H29.6475V0.368866H38.2796V2.84111H32.8507V5.23819H37.9566V7.49327H32.8507V9.94881H38.2796Z"
+                                        fill="white"></path>
+                                </svg><span class="blind">LIVE</span></em></div><span class="streamerstitle">서넹</span>
+                    </div>
+                </div>
+                <div class="streamerbx">
+                    <div class="streamers">
+                        <div class="circle" id="profile3"><em class="partner_badge__1eb73"><svg width="20" height="7"
+                                    viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.5918 9.94881V12.4211H0.177979V0.368866H3.38116V9.94881H8.5918ZM13.8997 0.368866V12.4211H10.6965V0.368866H13.8997ZM23.7898 12.4211L27.8047 0.368866H24.296L21.8783 9.42263H21.8085L19.3821 0.368866H15.7425L19.7574 12.4211H23.7898ZM38.2796 9.94881V12.4211H29.6475V0.368866H38.2796V2.84111H32.8507V5.23819H37.9566V7.49327H32.8507V9.94881H38.2796Z"
+                                        fill="white"></path>
+                                </svg><span class="blind">LIVE</span></em></div><span class="streamerstitle">침착맨</span>
+                    </div>
+                </div>
+                <div class="streamerbx">
+                    <div class="streamers">
+                        <div class="circle" id="profile4"><em class="partner_badge__1eb73"><svg width="20" height="7"
+                                    viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.5918 9.94881V12.4211H0.177979V0.368866H3.38116V9.94881H8.5918ZM13.8997 0.368866V12.4211H10.6965V0.368866H13.8997ZM23.7898 12.4211L27.8047 0.368866H24.296L21.8783 9.42263H21.8085L19.3821 0.368866H15.7425L19.7574 12.4211H23.7898ZM38.2796 9.94881V12.4211H29.6475V0.368866H38.2796V2.84111H32.8507V5.23819H37.9566V7.49327H32.8507V9.94881H38.2796Z"
+                                        fill="white"></path>
+                                </svg><span class="blind">LIVE</span></em></div><span class="streamerstitle">울프</span>
+                    </div>
+                </div>
+                <div class="streamerbx">
+                    <div class="streamers">
+                        <div class="circle" id="profile5"><em class="partner_badge__1eb73"><svg width="20" height="7"
+                                    viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.5918 9.94881V12.4211H0.177979V0.368866H3.38116V9.94881H8.5918ZM13.8997 0.368866V12.4211H10.6965V0.368866H13.8997ZM23.7898 12.4211L27.8047 0.368866H24.296L21.8783 9.42263H21.8085L19.3821 0.368866H15.7425L19.7574 12.4211H23.7898ZM38.2796 9.94881V12.4211H29.6475V0.368866H38.2796V2.84111H32.8507V5.23819H37.9566V7.49327H32.8507V9.94881H38.2796Z"
+                                        fill="white"></path>
+                                </svg><span class="blind">LIVE</span></em></div><span class="streamerstitle">크캣</span>
+                    </div>
+                </div>
+                <div class="streamerbx">
+                    <div class="streamers">
+                        <div class="circle" id="profile6"><em class="partner_badge__1eb73"><svg width="20" height="7"
+                                    viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.5918 9.94881V12.4211H0.177979V0.368866H3.38116V9.94881H8.5918ZM13.8997 0.368866V12.4211H10.6965V0.368866H13.8997ZM23.7898 12.4211L27.8047 0.368866H24.296L21.8783 9.42263H21.8085L19.3821 0.368866H15.7425L19.7574 12.4211H23.7898ZM38.2796 9.94881V12.4211H29.6475V0.368866H38.2796V2.84111H32.8507V5.23819H37.9566V7.49327H32.8507V9.94881H38.2796Z"
+                                        fill="white"></path>
+                                </svg><span class="blind">LIVE</span></em></div><span class="streamerstitle">오킹</span>
+                    </div>
+                </div>
+            </div>
+            <span style="margin-top: 30px;">
+                보러가기!</span>
+            <div id="arrow" class="animate__animated animate__bounce animate__infinite"></div>
+        </div>
+    </div>
+    <section class="section1">
+        <div class="title1box">
+            <img src="img/logo.png" alt="">
+            <p class="title1 boldfont">치지직을 소개합니다!</p>
+            <p class="tinyfont">※2024년 2월 네이버의 출시 예정인 비디오 스트리밍 서비스</p>
+        </div>
+
+
+        <div class="section1_box">
+            <div class="section1_bx">
+                <div class="section1_icon"><img src="img/bx1_icon.png" alt=""></div>
+                <p class="boldfont">다양한 콘텐츠</p>
+                <p class="tinyfont">게임, 엔터테인먼트, 스포츠, 음악 등 다양한 콘텐츠를 다루는 양방향 생방송 서비스</p>
+            </div>
+            <div class="section1_bx">
+                <div class="section1_icon"><img src="img/bx2 icon.png" alt=""></div>
+                <p class="boldfont">치지직 파트너십</p>
+                <p class="tinyfont">유명한 스트리머들은 치지직 파트너가 되어 광고 수익을 얻을 수 있고, 구독 기능을 통해 자신의 채널을 지원하는 팬들을 만날 수 있습니다.</p>
+            </div>
+            <div class="section1_bx">
+                <div class="section1_icon"><img src="img/bx3 icon.png" alt=""></div>
+                <p class="boldfont">치즈 폭탄!</p>
+                <p class="tinyfont">후원 화폐인 치즈를 네이버페이로 결제할 수 있고 쌓은 네이버페이 포인트로도 결제할 수 있습니다.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <h1 class="title2"><span class="title2_1 boldfont">치지직 파트너 스트리머를 소개합니다!</span></h1>
+        <div class="section2_box">
+            <p class="name boldfont">수많은 팬을 즐겁게 만들어 줄 파트너 스트리머들의 모든 활동과 열정, 창의성을 함께 응원해 주세요</p>
+            <div class="section2_flex">
+                <div class="path">
+                    <div class="box"><img src="img/감블러.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">감블러</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/강소연.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">강소연</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/강지12.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">강지</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/강퀴.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">강퀴</p>
+                </div>
+
+                <div class="path">
+                    <div class="box"><img src="img/레알개복어.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">개복어</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/김남봉.jpg" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">김남봉</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/김도.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">김도</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/김뚜띠.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">김뚜띠</p>
+                </div>
+
+                <div class="path">
+                    <div class="box"><img src="img/김뿡.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">김뿡</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/나나양.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">나나양</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/네클릿.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">네클릿</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/노페.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">노페</p>
+                </div>
+
+                <div class="path">
+                    <div class="box"><img src="img/감블러.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">감블러</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/강소연.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">강소연</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/강지12.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">강지</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/강퀴.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">강퀴</p>
+                </div>
+
+                <div class="path">
+                    <div class="box"><img src="img/레알개복어.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">개복어</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/김남봉.jpg" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">김남봉</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/김도.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">김도</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/김뚜띠.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">김뚜띠</p>
+                </div>
+
+                <div class="path">
+                    <div class="box"><img src="img/김뿡.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">김뿡</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/나나양.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">나나양</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/네클릿.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">네클릿</p>
+                </div>
+                <div class="path">
+                    <div class="box"><img src="img/노페.png" alt=""><span>방송 보러가기</span></div>
+                    <p class="name boldfont">노페</p>
+                </div>
+
+            </div>
+            <button id="more1" class="loadMore">더보기</button>
+        </div>
+    </section>
+    <section class="section3">
+        <p class="title3 boldfont">카테고리별 방송 탐색하기</p>
+        <div class="section3_box">
+            <div class="section3_bx">
+                <nav class="main-menu">
+                    <h1 class="boldfont">카테고리</h1>
+
+                    <ul>
+                        <li class="nav-item active" onclick="toggleTab('category1')">
+                            <b></b>
+                            <b></b>
+                            <a>
+                                <span class="nav-text">Game</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" onclick="toggleTab('category2')">
+                            <b></b>
+                            <b></b>
+                            <a>
+
+                                <span class="nav-text">RealLife</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" onclick="toggleTab('category3')">
+                            <b></b>
+                            <b></b>
+                            <a>
+
+                                <span class="nav-text">Music</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" onclick="toggleTab('category4')">
+                            <b></b>
+                            <b></b>
+                            <a>
+
+                                <span class="nav-text">E-sport</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" onclick="toggleTab('category5')">
+                            <b></b>
+                            <b></b>
+                            <a>
+
+                                <span class="nav-text">Creative</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="content-wrapper">
+                    <div id="category1" class="content active1">
+                        <h1 class="category-title boldfont">추천 게임 방송</h1>
+                        <div class="category-flex">
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile1"></div><p class="title5">방송제목 <br> <span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile3"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile4"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile5"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile6"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile1"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile1"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile1"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile1"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile1"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="category2" class="content">
+                        <h1 class="category-title boldfont">추천 리얼라이프 방송</h1>
+                        <div class="category-flex">
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="category3" class="content">
+                        <h1 class="category-title boldfont">추천 음악 방송</h1>
+                        <div class="category-flex">
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="category4" class="content">
+                        <h1 class="category-title boldfont">추천 e스포츠 방송</h1>
+                        <div class="category-flex">
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="category5" class="content">
+                        <h1 class="category-title boldfont">추천 크리에이티브 방송</h1>
+                        <div class="category-flex">
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                            <div class="category-flexbox">
+                                <div class="category-flexbox-top"><span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                                <div class="category-flexbox-bottom"><div class="circle" id="profile2"></div><p class="title5">방송제목 <br><span class="streamer_font">스트리머명</span></p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
