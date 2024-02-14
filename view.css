@@ -75,7 +75,6 @@ button {
 
 #search_1>form>input:focus {
     width: 400px;
-    background: #00ffa3;
 }
 
 .login_btn button{
@@ -102,6 +101,10 @@ button {
     border-right: 1px solid #ccc;
     grid-column: auto;
     text-align: center;
+    padding: 10px;
+}
+.channel{
+    border-bottom: 1px dotted #999;
 }
 .container{
     width: 100%;
@@ -112,7 +115,7 @@ button {
 .streamers{
     display: flex;
     align-items: center;
-    margin: 15px 0 15px 10px;
+    margin: 10px 0 10px 10px;
 }
 
 .circle {
@@ -129,6 +132,7 @@ button {
 }
 .streamerstitle{
     margin-left: 15px;
+    font-size: 14px;
 }
 /* 라이브 css */
 .partner_badge__1eb73 {
@@ -178,11 +182,14 @@ button {
     background-position: 50%;
     background-size: contain;
 }
-
+.service p{
+    margin-bottom: 10px;
+}
 .services{
     display: flex;
     align-items: center;
     margin: 15px 0 15px 10px;
+    font-size: 14px;
 }
 .services i {
     margin-right: 10px;
