@@ -36,7 +36,7 @@ button {
 
 .topbar{
     width: 100%;
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,7 +78,7 @@ button {
 }
 
 .login_btn button{
-    border: 1px solid #000;
+    border: 2px solid #000;
     border-radius: 8px;
     font-size: 12px;
     height: 30px;
@@ -106,11 +106,7 @@ button {
 .channel{
     border-bottom: 1px dotted #999;
 }
-.container{
-    width: 100%;
-    height: 100%;
-    background: rebeccapurple;
-}
+
 
 .streamers{
     display: flex;
@@ -132,7 +128,7 @@ button {
 }
 .streamerstitle{
     margin-left: 15px;
-    font-size: 14px;
+    font-size: 15px;
 }
 /* 라이브 css */
 .partner_badge__1eb73 {
@@ -189,8 +185,63 @@ button {
     display: flex;
     align-items: center;
     margin: 15px 0 15px 10px;
-    font-size: 14px;
+    font-size: 13px;
 }
 .services i {
     margin-right: 10px;
+}
+
+/* ============container=========== */
+.container{
+    width: 100%;
+    height: 100%;
+    background: #f7f8f9;
+    overflow-y: auto;
+}
+.profile_box{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1360px;
+    padding: 20px 30px 17px;
+    justify-content: space-between;
+}
+.profile_box_left{
+    display: flex;
+}
+.circle2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.profile_title{
+    display: flex;
+    flex-direction: column;
+    
+}
+.profile_title span{
+    margin: 1px 0;
+}
+.name{
+    font-size: 17px;
+}
+.btn1{
+    height: 34px;
+    background-color: rgba(0,255,163,.9);
+    border-radius: 17px;
+    padding-right: 16px;
+    text-align: center;
+    line-height: 34px;
+}
+.btn2{
+    height: 34px;
+    border: 2px solid #000;
+    border-radius: 17px;
+    padding-right: 16px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 34px;
+}
+.btn1 i,
+.btn2 i{
+    margin-left: 5px;
 }
