@@ -1,0 +1,189 @@
+body {
+    margin: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow: hidden;
+
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.boldfont {
+    font-family: "Sandoll Nemony2" !important;
+    font-weight: 400;
+}
+/* ------------------------header------------------------ */
+
+.topbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00ffa3;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+.list-icon,
+.search-icon{
+    display: none;
+}
+
+
+
+#search_1>form>input {
+    width: 380px;
+    height: 40px;
+    border-radius: 30px;
+    padding-left: 40px;
+    transition: 0.8s;
+
+}
+#search_1 form{
+    position: relative;
+}
+#search_1 .fa-search{
+    position: absolute;
+    top: 13px;
+    left: 10px;
+}
+#search_1 {
+    margin: 0px 0 auto;
+}
+
+#search_1>form>input:focus {
+    width: 400px;
+    background: #00ffa3;
+}
+
+.login_btn button{
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-size: 12px;
+    height: 30px;
+    margin-left: 8px;
+    padding: 0 10px;
+}
+
+/* ----------------------main------------------ */
+
+.main{
+    display: grid;
+    grid-template-columns: 13% 87%;
+    width: 100%;
+    height: 100vh;
+}
+/* ============side=========== */
+.sidenav{
+    background: #00ffa3;
+    padding-top: 5px;
+    border-right: 1px solid #ccc;
+    grid-column: auto;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: rebeccapurple;
+}
+
+.streamers{
+    display: flex;
+    align-items: center;
+    margin: 15px 0 15px 10px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+
+}
+.streamerstitle{
+    margin-left: 15px;
+}
+/* 라이브 css */
+.partner_badge__1eb73 {
+    background-color: #e02020;
+    border-radius: 7px;
+    bottom: -2px;
+    font-size: 0;
+    left: 50%;
+    line-height: 0;
+    padding: 3px 5px 4px;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#profile1 {
+    background: url(img/photo_0.png);
+    background-position: 50%;
+    background-size: contain;
+}
+#profile2 {
+    background: url(img/unnamed.jpg);
+    background-position: 50%;
+    background-size: contain;
+}
+
+#profile3 {
+    background: url(img/침착맨-프로필-2023.png);
+    background-position: 50%;
+    background-size: contain;
+}
+
+#profile4 {
+    background: url(img/그윽.jpg);
+    background-position: 50%;
+    background-size: contain;
+}
+
+#profile5 {
+    background: url(img/Crazzy_CZ.png);
+    background-position: 50%;
+    background-size: contain;
+}
+
+#profile6 {
+    background: url(img/ok.png);
+    background-position: 50%;
+    background-size: contain;
+}
+
+.services{
+    display: flex;
+    align-items: center;
+    margin: 15px 0 15px 10px;
+}
+.services i {
+    margin-right: 10px;
+}
