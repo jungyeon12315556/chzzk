@@ -993,5 +993,12 @@ footer {
     background-color: rgba(0, 0, 0, .2);
     margin: 0 0 0 10px;
     vertical-align: bottom;
-}
+    }
+    .footer-bx1>ul>li>a {
+        font-size: 10px;
+    }
+    
+    .footer-bx2>ul>li>a {
+        font-size: 9px;
+    }
 }
