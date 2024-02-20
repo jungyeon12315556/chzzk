@@ -216,13 +216,16 @@ button {
 .profile_title{
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
+    height: 100px;
+    justify-content: center;
     
 }
 .profile_title span{
     margin: 1px 0;
 }
 .name{
-    font-size: 17px;
+    font-size: 24px;
 }
 .btn1{
     height: 34px;
@@ -231,6 +234,8 @@ button {
     padding-right: 16px;
     text-align: center;
     line-height: 34px;
+    padding-left: 20px;
+    margin-right: 10px;
 }
 .btn2{
     height: 34px;
@@ -240,8 +245,150 @@ button {
     background-color: #fff;
     text-align: center;
     line-height: 34px;
+    padding-left: 20px;
 }
 .btn1 i,
 .btn2 i{
     margin-left: 5px;
+}
+
+/* viewbox */
+nav {
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li {
+    display: block;
+    position: relative;
+    float: left;
+    padding: 16px 0 38px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 400;
+    color: #000;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+nav ul li span:hover {
+    color: #8ac007;
+}
+
+nav .effect {
+    position: absolute;
+    left: -12.5%;            
+    width: 12px;
+    height: 12px;
+    bottom: 15px;
+    margin-left: -6px;
+    border-radius: 50%;
+    background: #8ac007;    
+    -webkit-transition: 0.7s ease-in-out;
+    transition: 0.7s ease-in-out;
+}
+
+.viewbox_ul li:nth-child(1):hover~.effect {
+    left: 50px;
+}
+
+.viewbox_ul li:nth-child(2):hover~.effect {
+    left: 150px;
+}
+
+.viewbox_ul li:nth-child(3):hover~.effect {
+    left: 250px;
+}
+
+nav:after{
+    content: "";
+    display: block;
+    /* content,displat:block는 무조건 해야함 가상요소 할때 */
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 1px;
+    background: #8ac007;  
+}
+nav ul li:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 18px;
+    width: 4px;
+    height: 4px;
+    background: #8ac007; 
+    margin-left: -2px;
+    border-radius: 50%;
+}
+
+
+.content {
+
+    display: none;
+    width: 100%;
+
+}
+
+.content:first-child {
+
+    display: block;
+
+}
+.active1 {
+    display: block;
+}
+.home{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.box-top{
+   position: absolute;
+   top: 3%;
+   left: 2%;
+}
+.livebtn {
+    align-items: center;
+    color: #fff;
+    display: inline-flex;
+    font-size: 15px;
+    height: 30px;
+    justify-content: center;
+    letter-spacing: -0.3px;
+    line-height: 30px;
+    border-radius: 4px;
+    
+    padding: 0px 15px;
+    background-color: red;
+    font-weight: 600;
+    margin-left: 10px;
+    z-index: 50;
+}
+
+
+.viewnumber {
+
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    height: 30px;
+    letter-spacing: -0.3px;
+    line-height: 30px;
+    padding: 15px;
+    z-index: 50;
+    margin-left: 5px;
+}
+iframe{
+    border-radius: 15px;
+    margin: 0 auto;
 }
