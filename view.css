@@ -468,9 +468,9 @@ iframe{
 /* video */
 .video{
     padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 .video_box{
     width: 300px;
