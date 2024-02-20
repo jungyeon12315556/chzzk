@@ -32,6 +32,23 @@ button {
     font-family: "Sandoll Nemony2" !important;
     font-weight: 400;
 }
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0,255,163,.9);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,255,163,.9);
+}
+
 /* ------------------------header------------------------ */
 
 .topbar{
@@ -43,7 +60,8 @@ button {
     background: rgba(0,255,163,.9);
     padding: 0 20px;
     box-sizing: border-box;
-    border-bottom: 1px solid rgba(0, 0, 0, .8);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, .1);
 }
 
 
@@ -146,36 +164,36 @@ button {
 }
 
 #profile1 {
-    background: url(img/photo_0.png);
+    background: url(img/photo_0.png) no-repeat;
     background-position: 50%;
     background-size: contain;
 }
 #profile2 {
-    background: url(img/unnamed.jpg);
+    background: url(img/unnamed.jpg) no-repeat;
     background-position: 50%;
     background-size: contain;
 }
 
 #profile3 {
-    background: url(img/침착맨-프로필-2023.png);
+    background: url(img/침착맨-프로필-2023.png) no-repeat;
     background-position: 50%;
     background-size: contain;
 }
 
 #profile4 {
-    background: url(img/그윽.jpg);
+    background: url(img/그윽.jpg) no-repeat;
     background-position: 50%;
     background-size: contain;
 }
 
 #profile5 {
-    background: url(img/Crazzy_CZ.png);
+    background: url(img/Crazzy_CZ.png) no-repeat;
     background-position: 50%;
     background-size: contain;
 }
 
 #profile6 {
-    background: url(img/ok.png);
+    background: url(img/ok.png) no-repeat;
     background-position: 50%;
     background-size: contain;
 }
@@ -276,7 +294,8 @@ nav ul li {
     transition: all 0.7s;
 }
 
-nav ul li span:hover {
+nav ul li span:hover,
+nav ul li span:focus{
     color: #8ac007;
 }
 
@@ -327,6 +346,9 @@ nav ul li:after{
     border-radius: 50%;
 }
 
+.viewbox_btn{
+    cursor: pointer;
+}
 
 .content {
 
@@ -425,6 +447,12 @@ iframe{
     color: #fff;
     margin-left: 10px;
 }
+.youtube:hover,
+.youtube:focus {
+    background: #999;
+    box-shadow: 0 0.5em 0.5em -0.4em #000;
+
+}
 .home3{
     padding: 15px;
 }
@@ -437,7 +465,48 @@ iframe{
     font-weight: 600;
     margin: 0;
 }
-
+/* video */
+.video{
+    padding: 15px;
+}
+/* post */
+.post{
+    padding: 15px;
+}
+.post_box{
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 30px 17px;
+    justify-content: space-between;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .1);
+    margin-bottom: 15px;
+}
+.post_box_left{
+    display: flex;
+}
+.circle3{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.post_title{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: center;
+    
+}
+.post_title span:last-of-type{
+    padding-top: 50px;
+}
+.name2{
+    font-size: 18px;
+}
+.comment{
+    color: #8ac007;
+    font-size: 13px;
+    cursor: pointer;
+}
 /* ----------------------footer------------------------------ */
 footer {
     width: 100%;
