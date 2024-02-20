@@ -136,9 +136,47 @@
                     <div class="circle2" id="profile3"></div>
                     <div class="profile_title"><span class="name boldfont">침착맨</span><span class="boldfont">팔로워 12.7만명</span> <span>안녕하세요? 침착맨입니다. 반가워요.</span></div>
                     </div>
-                    <div> <button class="btn1 boldfont">팔로우<i class="fa fa-heart-o" aria-hidden="true"></i></button><button class="btn2 boldfont">구독<i class="fa fa-plus-circle" aria-hidden="true"></i></button></div>
+                    <div> <button class="btn1 boldfont">팔로우<i class="fa-solid fa-heart"></i></button><button class="btn2 boldfont">구독<i class="fa fa-plus-circle" aria-hidden="true"></i></button></div>
+                </div>
+                <div class="viewbox">
+                    <nav>
+                        <ul class="viewbox_ul"> 
+                        <li class="viewbox_btn" onclick="toggleTab('group1')"><span>홈</span></li>
+                        <li class="viewbox_btn" onclick="toggleTab('group2')"><span>동영상</span></li>
+                        <li class="viewbox_btn" onclick="toggleTab('group3')"><span>게시물</span></li>
+                        <div class="effect"></div>
+                        </ul>
+                        
+                    </nav>
+                    <div class="content-wrapper">
+                        <div id="group1" class="content active1">
+                            <div class="home">
+                                <div class="box-top">
+                            <span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                            <iframe width="98%" height="450" src="https://www.youtube.com/embed/8kaQpxl43Ek?si=nfYUxrq53vBmuaGN&amp;start=26&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div id="group2" class="content"> 동영상 텍스트</div>
+                        <div id="group3" class="content"> 게시물 텍스트</div>
+                    </div>
                 </div>
             </div>
+            <script>
+                function toggleTab(groupId) {
+                    var group = document.getElementById(groupId);
+                    var tabs = document.getElementsByClassName('content');
+
+                    for (var i = 0; i < tabs.length; i++) {
+                        if (tabs[i] !== group) {
+                            tabs[i].style.display = 'none';
+                        }
+                    }
+
+                    group.style.display = 'block';
+
+                    group.classList.toggle('active1');
+                }
+            </script>
         </div>
     </main>
 </body>
