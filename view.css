@@ -40,9 +40,10 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #00ffa3;
+    background: rgba(0,255,163,.9);
     padding: 0 20px;
     box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, .8);
 }
 
 
@@ -96,7 +97,7 @@ button {
 }
 /* ============side=========== */
 .sidenav{
-    background: #00ffa3;
+    background: rgba(0,255,163,.9);
     padding-top: 5px;
     border-right: 1px solid #ccc;
     grid-column: auto;
@@ -225,7 +226,7 @@ button {
     margin: 1px 0;
 }
 .name{
-    font-size: 24px;
+    font-size: 26px;
 }
 .btn1{
     height: 34px;
@@ -307,7 +308,6 @@ nav .effect {
 nav:after{
     content: "";
     display: block;
-    /* content,displat:block는 무조건 해야함 가상요소 할때 */
     position: absolute;
     bottom: 20px;
     width: 100%;
@@ -343,7 +343,8 @@ nav ul li:after{
 .active1 {
     display: block;
 }
-.home{
+/* --home-- */
+.home1{
     margin: 0 auto;
     position: relative;
     width: 100%;
@@ -374,6 +375,7 @@ nav ul li:after{
 }
 
 
+
 .viewnumber {
 
     background-color: rgba(0, 0, 0, .8);
@@ -384,11 +386,148 @@ nav ul li:after{
     height: 30px;
     letter-spacing: -0.3px;
     line-height: 30px;
-    padding: 15px;
+    padding: 0 15px;
     z-index: 50;
     margin-left: 5px;
 }
 iframe{
     border-radius: 15px;
     margin: 0 auto;
+}
+.home2{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+
+}
+.home2 h3,
+.home3 h3{
+    font-size: 20px;
+}
+.youtubes{
+    display: flex;
+    justify-content: left;
+   
+}
+.youtube{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 7px 15px 7px 7px;
+    margin: 15px;
+    border-radius: 15px;
+
+}
+.youtube a{
+    font-size: 16px;
+    color: #fff;
+    margin-left: 10px;
+}
+.home3{
+    padding: 15px;
+}
+.home3 ul > li {
+    display: flex;
+    padding-bottom:10px ;
+}
+.home3 ul > li > p {
+    padding-right:20px ;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* ----------------------footer------------------------------ */
+footer {
+    width: 100%;
+    padding: 0;
+    margin-top: 130px;
+}
+
+.footer-bx1 {
+    padding: 10px 0;
+    margin-bottom: 36px;
+    box-shadow: inset 0 -0.6px 0 0 rgba(0, 0, 0, .2);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bx2 {
+    padding: 10px 0;
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bx1>ul,
+.footer-bx2>ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-bx1>ul>li,
+.footer-bx2>ul>li {
+    display: inline-block;
+    margin: 12px;
+}
+
+.footer-bx1>ul>li>a {
+    font-size: 12px;
+}
+
+.footer-bx2>ul>li>a {
+    font-size: 10px;
+}
+
+.footer-bx1 ul li img {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bx2 p {
+    display: inline-block;
+    font-size: 10px;
+}
+
+.footer-bx1>ul>li>a::after,
+.footer-bx2>ul>li>a::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, .2);
+    margin: 0 0 4px 15px;
+    vertical-align: bottom;
+}
+
+@media(max-width:720px) {
+
+    .footer-bx1>ul>li,
+    .footer-bx2>ul>li {
+        display: inline-block;
+        margin: 3px;
+    }
+    .footer-bx1>ul>li>a::after,
+    .footer-bx2>ul>li>a::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, .2);
+    margin: 0 0 0 10px;
+    vertical-align: bottom;
+    }
+    .footer-bx1>ul>li>a {
+        font-size: 10px;
+    }
+    
+    .footer-bx2>ul>li>a {
+        font-size: 9px;
+    }
 }
