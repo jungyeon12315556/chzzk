@@ -473,7 +473,7 @@ iframe{
     grid-template-columns: repeat(4, 1fr);
 }
 .video_box{
-    width: 300px;
+    width: 20vw;
     display: flex;
     flex-wrap: wrap;
     margin:  5px;
@@ -500,6 +500,41 @@ iframe{
 }
 #thumbnail1{
     background: url(img/view1.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+#thumbnail2{
+    background: url(img/view2.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+#thumbnail3{
+    background: url(img/view3.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+#thumbnail4{
+    background: url(img/view4.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+#thumbnail5{
+    background: url(img/view5.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+#thumbnail6{
+    background: url(img/view6.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+#thumbnail7{
+    background: url(img/view7.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+#thumbnail8{
+    background: url(img/view8.jpg) no-repeat;
     background-position: 50%;
     background-size: cover;
 }
