@@ -350,6 +350,10 @@ nav ul li:after{
     cursor: pointer;
 }
 
+.bxx.on{
+    color:#8ac007;
+    font-weight: 600;
+}
 .content {
 
     display: none;
@@ -466,6 +470,22 @@ iframe{
     margin: 0;
 }
 /* video */
+.video_btns{
+    padding: 15px;
+}
+.video_btn{
+    display: inline-block;
+    padding: 3px 10px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 5px;
+    border: 1px solid #000;
+    font-size: 15px;
+}
+.video_btn.active{
+    background: #999;
+
+}
 .video{
     padding: 15px;
     display: grid;
