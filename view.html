@@ -19,6 +19,29 @@
 
     <link rel="stylesheet" href="view.css">
     <title>chzzk</title>
+    <script>
+         $(function () {
+            $(".video_btn:nth-child(1)").addClass("active");
+            $(".video_btn").click(function () {
+
+                $(".video_btn").removeClass("active")
+                $(this).addClass("active")
+
+            });
+
+        });
+        
+        $(function () {
+            $(".bxx").first().addClass("on");
+            $(".viewbox_btn").click(function () {
+
+                $(".viewbox_btn").children('.bxx').removeClass("on");
+                $(this).children('.bxx').addClass("on");
+
+            });
+
+        });
+    </script>
 </head>
 
 <body>
@@ -178,8 +201,12 @@
                             </div>
                         </div>
                         <div id="group2" class="content">
+                            <div class="video_btns">
+                                <button class="video_btn boldfont">전체 동영상</button>
+                                <button class="video_btn boldfont">최신순 동영상</button>
+                                <button class="video_btn boldfont">인기순 동영상</button>
+                            </div>
                             <div class="video">
-                                
                                 <div class="video_box"><div class="video_picture" id="thumbnail1"> <span class="replay"><i class="fa-solid fa-circle-play fa-xs"></i> 다시보기</span></div><p class="boldfont">마인크래프트 방송<br> <span class="count">조회수 1,405회</span></p></div>
                                 <div class="video_box"><div class="video_picture" id="thumbnail2"> <span class="replay"><i class="fa-solid fa-circle-play fa-xs"></i> 다시보기</span></div><p class="boldfont">12.28 방송 시작합니다.<br> <span class="count">조회수 9,405회</span></p></div>
                                 <div class="video_box"><div class="video_picture" id="thumbnail3"> <span class="replay"><i class="fa-solid fa-circle-play fa-xs"></i> 다시보기</span></div><p class="boldfont">배우 이재훈 초대석<br> <span class="count">조회수 2,405회</span></p></div>
