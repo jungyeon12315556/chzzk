@@ -103,6 +103,7 @@ button {
     height: 30px;
     margin-left: 8px;
     padding: 0 10px;
+    color: #000;
 }
 @media(max-width:720px){
     #search_1 {
@@ -131,6 +132,7 @@ button {
         border-radius: 7px;
         font-size: 10px;
         height: 25px;
+        
         
     }
 }
@@ -295,6 +297,7 @@ button {
     line-height: 34px;
     padding-left: 20px;
     margin-right: 10px;
+    color: #000;
 }
 .btn2{
     height: 34px;
@@ -305,6 +308,7 @@ button {
     text-align: center;
     line-height: 34px;
     padding-left: 20px;
+    color: #000;
 }
 .btn1 i,
 .btn2 i{
@@ -322,6 +326,11 @@ button {
         width: 75px;
         height: 75px;
         border-radius: 50%;
+    }
+    #profile3 {
+        background: url(img/침착맨-프로필-2023.png) no-repeat;
+        background-position: 50%;
+        background-size: cover;
     }
     .profile_title{
         display: flex;
@@ -342,23 +351,24 @@ button {
         height: 30px;
         background-color: rgba(0,255,163,.9);
         border-radius: 17px;
-        padding-right: 12px;
+        padding: 0 5px;
         text-align: center;
         line-height: 30px;
-        padding-left: 16px;
-        margin-right: 8px;
-        font-size: 11px;
+        
+        margin-right: 5px;
+        font-size: 10px;
+        
     }
     .btn2{
         height: 30px;
         border: 2px solid #000;
         border-radius: 17px;
-        padding-right: 12px;
+        padding: 0 5px;
         background-color: #fff;
         text-align: center;
         line-height: 30px;
-        padding-left: 16px;
-        font-size: 11px;
+        
+        font-size: 10px;
     }
     .btn{
         display: flex;
