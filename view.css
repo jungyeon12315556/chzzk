@@ -315,11 +315,15 @@ button {
     margin-left: 5px;
 }
 @media(max-width:720px){
+    .container{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
     .profile_box{
         display: flex;
         margin: 0 auto;
         max-width: 1360px;
-        padding: 10px 20px 7px;
+        padding: 10px;
         justify-content: space-between;
     }
     .circle2{
@@ -350,29 +354,33 @@ button {
     .btn1{
         height: 30px;
         background-color: rgba(0,255,163,.9);
-        border-radius: 17px;
-        padding: 0 5px;
+        border-radius: 10px;
+        padding: 0 10px;
         text-align: center;
         line-height: 30px;
         
-        margin-right: 5px;
-        font-size: 10px;
         
     }
     .btn2{
         height: 30px;
         border: 2px solid #000;
-        border-radius: 17px;
-        padding: 0 5px;
+        border-radius: 10px;
+        padding: 0 10px;
         background-color: #fff;
         text-align: center;
         line-height: 30px;
         
-        font-size: 10px;
     }
     .btn{
         display: flex;
         justify-content: center;
+    }
+    .hidden-text{
+        display: none;
+    }
+    .btn1 i,
+    .btn2 i{
+        margin-left: 0px;
     }
 }
 /* viewbox */
@@ -453,7 +461,9 @@ nav ul li:after{
 .viewbox_btn{
     cursor: pointer;
 }
-
+.bxx{
+    font-size: 15px;
+}
 .bxx.on{
     color:#8ac007;
     font-weight: 500;
@@ -473,7 +483,11 @@ nav ul li:after{
 .active1 {
     display: block;
 }
-
+@media(max-width:720px){
+    .bxx{
+        font-size: 14px;
+    }
+}
 
 /* --home-- */
 .home1{
