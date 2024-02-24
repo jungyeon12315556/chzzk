@@ -1,696 +1,310 @@
-body {
-    margin: 0px;
-    font-family: 'Noto Sans KR', sans-serif;
-    overflow: hidden;
-
-}
-
-html {
-    -webkit-text-size-adjust: 100%;
-}
-
-a {
-    text-decoration: none;
-    display: block;
-    color: #000;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-button {
-    border: none;
-    background: transparent;
-    outline: none;
-    cursor: pointer;
-}
-
-.boldfont {
-    font-family: "Sandoll Nemony2" !important;
-    font-weight: 400;
-}
-
-/* Custom Scroll Bar CSS */
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: rgba(0,255,163,.9);
-    border-radius: 12px;
-    transition: all 0.3s ease;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(0,255,163,.9);
-}
-
-/* ------------------------header------------------------ */
-
-.topbar{
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(0,255,163,.9);
-    padding: 0 20px;
-    box-sizing: border-box;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-    box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, .1);
-}
-
-
-.list-icon,
-.search-icon{
-    display: none;
-}
-
-
-
-#search_1>form>input {
-    width: 380px;
-    height: 40px;
-    border-radius: 30px;
-    padding-left: 40px;
-    transition: 0.8s;
-
-}
-#search_1 form{
-    position: relative;
-}
-#search_1 .fa-search{
-    position: absolute;
-    top: 13px;
-    left: 10px;
-}
-#search_1 {
-    margin: 0px 0 auto;
-}
-
-#search_1>form>input:focus {
-    width: 400px;
-}
-
-.login_btn button{
-    border: 2px solid #000;
-    border-radius: 8px;
-    font-size: 12px;
-    height: 30px;
-    margin-left: 8px;
-    padding: 0 10px;
-}
-
-/* ----------------------main------------------ */
-
-.main{
-    display: grid;
-    grid-template-columns: 13% 87%;
-    width: 100%;
-    height: 100vh;
-}
-/* ============side=========== */
-.sidenav{
-    background: rgba(0,255,163,.9);
-    padding-top: 5px;
-    border-right: 1px solid #ccc;
-    grid-column: auto;
-    text-align: center;
-    padding: 10px;
-}
-.channel{
-    border-bottom: 1px dotted #999;
-}
-
-
-.streamers{
-    display: flex;
-    align-items: center;
-    margin: 10px 0 10px 10px;
-}
-
-.circle {
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-
-
-}
-.streamerstitle{
-    margin-left: 15px;
-    font-size: 15px;
-}
-/* 라이브 css */
-.partner_badge__1eb73 {
-    background-color: #e02020;
-    border-radius: 7px;
-    bottom: -2px;
-    font-size: 0;
-    left: 50%;
-    line-height: 0;
-    padding: 3px 5px 4px;
-    position: absolute;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-#profile1 {
-    background: url(img/photo_0.png) no-repeat;
-    background-position: 50%;
-    background-size: contain;
-}
-#profile2 {
-    background: url(img/unnamed.jpg) no-repeat;
-    background-position: 50%;
-    background-size: contain;
-}
-
-#profile3 {
-    background: url(img/침착맨-프로필-2023.png) no-repeat;
-    background-position: 50%;
-    background-size: contain;
-}
-
-#profile4 {
-    background: url(img/그윽.jpg) no-repeat;
-    background-position: 50%;
-    background-size: contain;
-}
-
-#profile5 {
-    background: url(img/Crazzy_CZ.png) no-repeat;
-    background-position: 50%;
-    background-size: contain;
-}
-
-#profile6 {
-    background: url(img/ok.png) no-repeat;
-    background-position: 50%;
-    background-size: contain;
-}
-.service p{
-    margin-bottom: 10px;
-}
-.services{
-    display: flex;
-    align-items: center;
-    margin: 15px 0 15px 10px;
-    font-size: 13px;
-}
-.services i {
-    margin-right: 10px;
-}
-
-/* ============container=========== */
-.container{
-    width: 100%;
-    height: 100%;
-    background: #f7f8f9;
-    overflow-y: auto;
-}
-.profile_box{
-    display: flex;
-    margin: 0 auto;
-    max-width: 1360px;
-    padding: 20px 30px 17px;
-    justify-content: space-between;
-}
-.profile_box_left{
-    display: flex;
-}
-.circle2{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-.profile_title{
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    height: 100px;
-    justify-content: center;
-    
-}
-.profile_title span{
-    margin: 1px 0;
-}
-.name{
-    font-size: 26px;
-}
-.btn1{
-    height: 34px;
-    background-color: rgba(0,255,163,.9);
-    border-radius: 17px;
-    padding-right: 16px;
-    text-align: center;
-    line-height: 34px;
-    padding-left: 20px;
-    margin-right: 10px;
-}
-.btn2{
-    height: 34px;
-    border: 2px solid #000;
-    border-radius: 17px;
-    padding-right: 16px;
-    background-color: #fff;
-    text-align: center;
-    line-height: 34px;
-    padding-left: 20px;
-}
-.btn1 i,
-.btn2 i{
-    margin-left: 5px;
-}
-
-/* viewbox */
-nav {
-    position: relative;
-    margin: 10px 0;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-}
-
-nav ul li {
-    display: block;
-    position: relative;
-    float: left;
-    padding: 16px 0 38px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 400;
-    color: #000;
-    -webkit-transition: all 0.7s;
-    transition: all 0.7s;
-}
-
-nav ul li span:hover,
-nav ul li span:focus{
-    color: #8ac007;
-}
-
-nav .effect {
-    position: absolute;
-    left: -12.5%;            
-    width: 12px;
-    height: 12px;
-    bottom: 15px;
-    margin-left: -6px;
-    border-radius: 50%;
-    background: #8ac007;    
-    -webkit-transition: 0.7s ease-in-out;
-    transition: 0.7s ease-in-out;
-}
-
-.viewbox_ul li:nth-child(1):hover~.effect {
-    left: 50px;
-}
-
-.viewbox_ul li:nth-child(2):hover~.effect {
-    left: 150px;
-}
-
-.viewbox_ul li:nth-child(3):hover~.effect {
-    left: 250px;
-}
-
-nav:after{
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    height: 1px;
-    background: #8ac007;  
-}
-nav ul li:after{
-    content: "";
-    display: block;
-    position: absolute;
-    left: 50%;
-    bottom: 18px;
-    width: 4px;
-    height: 4px;
-    background: #8ac007; 
-    margin-left: -2px;
-    border-radius: 50%;
-}
-
-.viewbox_btn{
-    cursor: pointer;
-}
-
-.bxx.on{
-    color:#8ac007;
-    font-weight: 500;
-}
-.content {
-
-    display: none;
-    width: 100%;
-
-}
-
-.content:first-child {
-
-    display: block;
-
-}
-.active1 {
-    display: block;
-}
-/* --home-- */
-.home1{
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-.box-top{
-   position: absolute;
-   top: 3%;
-   left: 2%;
-}
-.livebtn {
-    align-items: center;
-    color: #fff;
-    display: inline-flex;
-    font-size: 15px;
-    height: 30px;
-    justify-content: center;
-    letter-spacing: -0.3px;
-    line-height: 30px;
-    border-radius: 4px;
-    
-    padding: 0px 15px;
-    background-color: red;
-    font-weight: 600;
-    margin-left: 10px;
-    z-index: 50;
-}
-
-
-
-.viewnumber {
-
-    background-color: rgba(0, 0, 0, .8);
-    border-radius: 4px;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 600;
-    height: 30px;
-    letter-spacing: -0.3px;
-    line-height: 30px;
-    padding: 0 15px;
-    z-index: 50;
-    margin-left: 5px;
-}
-iframe{
-    border-radius: 15px;
-    margin: 0 auto;
-}
-.home2{
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-
-}
-.home2 h3,
-.home3 h3{
-    font-size: 20px;
-}
-.youtubes{
-    display: flex;
-    justify-content: left;
-   
-}
-.youtube{
-    height: 30px;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    background-color: rgba(0, 0, 0, .8);
-    padding: 7px 15px 7px 7px;
-    margin: 15px;
-    border-radius: 15px;
-
-}
-.youtube a{
-    font-size: 16px;
-    color: #fff;
-    margin-left: 10px;
-}
-.youtube:hover,
-.youtube:focus {
-    background: #999;
-    box-shadow: 0 0.5em 0.5em -0.4em #000;
-
-}
-.home3{
-    padding: 15px;
-}
-.home3 ul > li {
-    display: flex;
-    padding-bottom:10px ;
-}
-.home3 ul > li > p {
-    padding-right:20px ;
-    font-weight: 600;
-    margin: 0;
-}
-/* video */
-.video_btns{
-    padding: 15px;
-}
-.video_btn{
-    display: inline-block;
-    padding: 3px 10px;
-    height: 30px;
-    border-radius: 15px;
-    margin: 5px;
-    border: 1px solid #000;
-    font-size: 15px;
-}
-.video_btn.active{
-    background: #999;
-
-}
-.video{
-    padding: 15px;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-}
-.video_box{
-    width: 20vw;
-    display: flex;
-    flex-wrap: wrap;
-    margin:  5px;
-    cursor: pointer;
-}
-.video_picture{
-    width: 100%;
-    height: 190px;
-    border-radius: 12px;
-    position: relative;
-}
-.replay{
-    height: 20px;
-    line-height: 20px;
-    padding: 3px 10px;
-    background: dodgerblue;
-    color: #fff;
-    position: absolute;
-    z-index: 33;
-    top: 2%;
-    left: 2%;
-    border-radius: 15px;
-    font-size: 12px;
-}
-#thumbnail1{
-    background: url(img/view1.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-}
-#thumbnail2{
-    background: url(img/view2.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-}
-#thumbnail3{
-    background: url(img/view3.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-}
-#thumbnail4{
-    background: url(img/view4.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-}
-#thumbnail5{
-    background: url(img/view5.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-}
-#thumbnail6{
-    background: url(img/view6.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-}
-#thumbnail7{
-    background: url(img/view7.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-}
-#thumbnail8{
-    background: url(img/view8.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-}
-.count{
-    font-size: 12px;
-    color: #999;
-}
-/* post */
-.post{
-    padding: 15px;
-}
-.post_box{
-    display: flex;
-    margin: 0 auto;
-    padding: 20px 30px 17px;
-    justify-content: space-between;
-    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .1);
-    margin-bottom: 15px;
-}
-.post_box_left{
-    display: flex;
-}
-.circle3{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-.post_title{
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    justify-content: center;
-    
-}
-.post_title span:last-of-type{
-    padding-top: 50px;
-}
-.name2{
-    font-size: 18px;
-}
-.comment{
-    color: #8ac007;
-    font-size: 13px;
-    cursor: pointer;
-}
-/* ----------------------footer------------------------------ */
-footer {
-    width: 100%;
-    padding: 0;
-    margin-top: 130px;
-    height: 250px;
-}
-
-.footer-bx1 {
-    padding: 10px 0;
-    margin-bottom: 36px;
-    box-shadow: inset 0 -0.6px 0 0 rgba(0, 0, 0, .2);
-    display: flex;
-    justify-content: center;
-}
-
-.footer-bx2 {
-    padding: 10px 0;
-    margin-bottom: 36px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-bx1>ul,
-.footer-bx2>ul {
-    display: flex;
-    align-items: center;
-
-}
-
-.footer-bx1>ul>li,
-.footer-bx2>ul>li {
-    display: inline-block;
-    margin: 12px;
-}
-
-.footer-bx1>ul>li>a {
-    font-size: 12px;
-}
-
-.footer-bx2>ul>li>a {
-    font-size: 10px;
-}
-
-.footer-bx1 ul li img {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-}
-
-.footer-bx2 p {
-    display: inline-block;
-    font-size: 10px;
-}
-
-.footer-bx1>ul>li>a::after,
-.footer-bx2>ul>li>a::after {
-    content: "";
-    display: inline-block;
-    width: 1px;
-    height: 12px;
-    background-color: rgba(0, 0, 0, .2);
-    margin: 0 0 4px 15px;
-    vertical-align: bottom;
-}
-
-@media(max-width:720px) {
-
-    .footer-bx1>ul>li,
-    .footer-bx2>ul>li {
-        display: inline-block;
-        margin: 3px;
-    }
-    .footer-bx1>ul>li>a::after,
-    .footer-bx2>ul>li>a::after {
-    content: "";
-    display: inline-block;
-    width: 1px;
-    height: 12px;
-    background-color: rgba(0, 0, 0, .2);
-    margin: 0 0 0 10px;
-    vertical-align: bottom;
-    }
-    .footer-bx1>ul>li>a {
-        font-size: 10px;
-    }
-    
-    .footer-bx2>ul>li>a {
-        font-size: 9px;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 웹폰트링크1 -->
+    <script type="module"
+        src="https://8fl3k30sy0.execute-api.ap-northeast-2.amazonaws.com/v1/api/fontstream/djs/?sid=gAAAAABlt8eAq5boLnwHnqiThhONDTvODUMKZqGoaBVenG_PwuUBvpZ5aY71zu2u-iqhffTwqJ663ng__vGVM0OVyhpl4f07oCSqLhGvo_GFX3YT53IONTBycJU3oD1G_kfShonhHHht_KoEHqS__8aIxyN6h4Oyv3P6xDO6LRLiIJ7VsKk3zOiG5-NXNFluSGkEO9P-HCglL6SheBOsoa5B9VYL6YsfS_loUSkyo0oBJDKE4zOgAg59rN8grGdC0LXDaOfBit1-"
+        charset="utf-8"></script>
+    <!-- 구글웹폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/f1e3afabbc.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="view.css">
+    <title>chzzk</title>
+    <script>
+         $(function () {
+            $(".video_btn:nth-child(1)").addClass("active");
+            $(".video_btn").click(function () {
+
+                $(".video_btn").removeClass("active")
+                $(this).addClass("active")
+
+            });
+
+        });
+        
+        $(function () {
+            $(".bxx").first().addClass("on");
+            $(".viewbox_btn").click(function () {
+
+                $(".viewbox_btn").children('.bxx').removeClass("on");
+                $(this).children('.bxx').addClass("on");
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <div class="header_left">
+                <button class="list-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <!-- 치지직로고 -->
+                <div>
+                    <svg width="96" height="26" viewBox="0 0 96 26" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M20.8469 6.15599L18.4029 19.844H23.3025L25.7427 6.15599H20.8469Z" fill="black"></path>
+                        <path
+                            d="M27.4327 6.15599L26.7791 9.81581H32.75L24.9886 19.844H30.5573L34.7841 14.381L33.8096 19.844H38.7054L39.9274 13.0019H35.8515L41.1495 6.15599H27.4327Z"
+                            fill="black"></path>
+                        <path
+                            d="M19.157 6.15599H13.5921L16.4229 2.5H10.8581L5.56005 9.34209H11.1288L3 19.844H8.5687L12.7955 14.381L11.821 19.844H16.7168L17.9388 13.0019H13.8628L19.157 6.15599Z"
+                            fill="black"></path>
+                        <path d="M42.8394 6.15599L40.3954 19.844H45.2912L47.7352 6.15599H42.8394Z" fill="black"></path>
+                        <path
+                            d="M49.4213 6.15599L48.7716 9.81581H54.7077L46.9811 19.844H52.546L56.7225 14.423L55.7557 19.844H60.6554L61.8774 13.0019H57.8208L63.0955 6.15599H49.4213Z"
+                            fill="black"></path>
+                        <path
+                            d="M67.8328 16.1842L69.6233 6.15599H64.7275L62.2834 19.844H65.4506L64.7971 23.5H69.6968L71 16.1842H67.8328Z"
+                            fill="black"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="header_mid">
+                <div id="search_1">
+                    <form action="action.php">
+                        <i class="fa fa-search"></i>
+                        <input type="search-icon" placeholder="스트리머 검색">
+
+                    </form>
+                </div>
+            </div>
+            <div class="header_right">
+                <button class="search-icon"><i class="fa fa-search"></i></button>
+                <button class="login_btn boldfont">로그인</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="sidenav">
+                <div class="channel"><p class="boldfont">추천채널 <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                    <div class="streamers">
+                        <div class="circle" id="profile1"><em class="partner_badge__1eb73"><svg width="20" height="7"
+                                    viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.5918 9.94881V12.4211H0.177979V0.368866H3.38116V9.94881H8.5918ZM13.8997 0.368866V12.4211H10.6965V0.368866H13.8997ZM23.7898 12.4211L27.8047 0.368866H24.296L21.8783 9.42263H21.8085L19.3821 0.368866H15.7425L19.7574 12.4211H23.7898ZM38.2796 9.94881V12.4211H29.6475V0.368866H38.2796V2.84111H32.8507V5.23819H37.9566V7.49327H32.8507V9.94881H38.2796Z"
+                                        fill="white"></path>
+                                </svg><span class="blind">LIVE</span></em></div><span class="streamerstitle boldfont">멋사</span>
+                    </div>
+                    <div class="streamers">
+                        <div class="circle" id="profile2"><em class="partner_badge__1eb73"><svg width="20" height="7"
+                                    viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.5918 9.94881V12.4211H0.177979V0.368866H3.38116V9.94881H8.5918ZM13.8997 0.368866V12.4211H10.6965V0.368866H13.8997ZM23.7898 12.4211L27.8047 0.368866H24.296L21.8783 9.42263H21.8085L19.3821 0.368866H15.7425L19.7574 12.4211H23.7898ZM38.2796 9.94881V12.4211H29.6475V0.368866H38.2796V2.84111H32.8507V5.23819H37.9566V7.49327H32.8507V9.94881H38.2796Z"
+                                        fill="white"></path>
+                                </svg><span class="blind">LIVE</span></em></div><span class="streamerstitle boldfont">서넹</span>
+                    </div>
+                    <div class="streamers">
+                        <div class="circle" id="profile3"><em class="partner_badge__1eb73"><svg width="20" height="7"
+                                    viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.5918 9.94881V12.4211H0.177979V0.368866H3.38116V9.94881H8.5918ZM13.8997 0.368866V12.4211H10.6965V0.368866H13.8997ZM23.7898 12.4211L27.8047 0.368866H24.296L21.8783 9.42263H21.8085L19.3821 0.368866H15.7425L19.7574 12.4211H23.7898ZM38.2796 9.94881V12.4211H29.6475V0.368866H38.2796V2.84111H32.8507V5.23819H37.9566V7.49327H32.8507V9.94881H38.2796Z"
+                                        fill="white"></path>
+                                </svg><span class="blind">LIVE</span></em></div><span class="streamerstitle boldfont">침착맨</span>
+                    </div>
+                    <div class="streamers">
+                        <div class="circle" id="profile4"><em class="partner_badge__1eb73"><svg width="20" height="7"
+                                    viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.5918 9.94881V12.4211H0.177979V0.368866H3.38116V9.94881H8.5918ZM13.8997 0.368866V12.4211H10.6965V0.368866H13.8997ZM23.7898 12.4211L27.8047 0.368866H24.296L21.8783 9.42263H21.8085L19.3821 0.368866H15.7425L19.7574 12.4211H23.7898ZM38.2796 9.94881V12.4211H29.6475V0.368866H38.2796V2.84111H32.8507V5.23819H37.9566V7.49327H32.8507V9.94881H38.2796Z"
+                                        fill="white"></path>
+                                </svg><span class="blind">LIVE</span></em></div><span class="streamerstitle boldfont">울프</span>
+                    </div>
+                    <div class="streamers">
+                        <div class="circle" id="profile5"><em class="partner_badge__1eb73"><svg width="20" height="7"
+                                    viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.5918 9.94881V12.4211H0.177979V0.368866H3.38116V9.94881H8.5918ZM13.8997 0.368866V12.4211H10.6965V0.368866H13.8997ZM23.7898 12.4211L27.8047 0.368866H24.296L21.8783 9.42263H21.8085L19.3821 0.368866H15.7425L19.7574 12.4211H23.7898ZM38.2796 9.94881V12.4211H29.6475V0.368866H38.2796V2.84111H32.8507V5.23819H37.9566V7.49327H32.8507V9.94881H38.2796Z"
+                                        fill="white"></path>
+                                </svg><span class="blind">LIVE</span></em></div><span class="streamerstitle boldfont">크캣</span>
+                    </div>
+                    <div class="streamers">
+                        <div class="circle" id="profile6"><em class="partner_badge__1eb73"><svg width="20" height="7"
+                                    viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.5918 9.94881V12.4211H0.177979V0.368866H3.38116V9.94881H8.5918ZM13.8997 0.368866V12.4211H10.6965V0.368866H13.8997ZM23.7898 12.4211L27.8047 0.368866H24.296L21.8783 9.42263H21.8085L19.3821 0.368866H15.7425L19.7574 12.4211H23.7898ZM38.2796 9.94881V12.4211H29.6475V0.368866H38.2796V2.84111H32.8507V5.23819H37.9566V7.49327H32.8507V9.94881H38.2796Z"
+                                        fill="white"></path>
+                                </svg><span class="blind">LIVE</span></em></div><span class="streamerstitle boldfont">오킹</span>
+                    </div>
+                </div>
+                <div class="service">
+                    <p class="boldfont">서비스 바로가기 <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                    <div class="services boldfont"><i class="fa fa-gamepad" aria-hidden="true"></i> 네이버 게임</div>
+                    <div class="services boldfont"><i class="fa fa-trophy" aria-hidden="true"></i>e스포츠</div>
+                    <div class="services boldfont"><i class="fa fa-star" aria-hidden="true"></i> 오리지널 시리즈</div>
+                    <div class="services boldfont"><i class="fa fa-desktop" aria-hidden="true"></i> PC 게임</div>
+                    <div class="services boldfont"><i class="fa fa-bolt" aria-hidden="true"></i> 치지직 라운지</div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="profile_box">
+                    <div class="profile_box_left">
+                    <div class="circle2" id="profile3"></div>
+                    <div class="profile_title"><span class="name boldfont">침착맨</span><span class="boldfont">팔로워 12.7만명</span> <span>안녕하세요? 침착맨입니다. 반가워요.</span></div>
+                    </div>
+                    <div class="btn"> <button class="btn1 boldfont">팔로우<i class="fa-solid fa-heart"></i></button><button class="btn2 boldfont">구독<i class="fa fa-plus-circle" aria-hidden="true"></i></button></div>
+                </div>
+                <div class="viewbox">
+                    <nav>
+                        <ul class="viewbox_ul"> 
+                        <li class="viewbox_btn" onclick="toggleTab('group1')"><span class="bxx boldfont">홈</span></li>
+                        <li class="viewbox_btn" onclick="toggleTab('group2')"><span class="bxx boldfont">동영상</span></li>
+                        <li class="viewbox_btn" onclick="toggleTab('group3')"><span class="bxx boldfont">게시물</span></li>
+                        <div class="effect"></div>
+                        </ul>
+                        
+                    </nav>
+                    <div class="content-wrapper">
+                        <div id="group1" class="content active1">
+                            <div class="home1">
+                                <div class="box-top">
+                            <span class="livebtn">LIVE</span><span class="viewnumber">18,381명 시청</span></div>
+                            <iframe width="98%" height="450" src="https://www.youtube.com/embed/8kaQpxl43Ek?si=nfYUxrq53vBmuaGN&amp;start=26&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class="home2">
+                                <h3 class="boldfont">채널</h3>
+                                <div class="youtubes">
+                                    <div class="youtube"><i class="fa-brands fa-youtube fa-lg" style="color: #f20713;"></i><a href="https://www.youtube.com/user/zilioner83" target="_blank" class="boldfont">침착맨(본채널)</a></div>
+                                    <div class="youtube"><i class="fa-brands fa-youtube fa-lg" style="color: #f20713;"></i><a href="https://www.youtube.com/@ChimChakMan_Plus" target="_blank" class="boldfont">침착맨 플러스</a></div>
+                                    <div class="youtube"><i class="fa-brands fa-youtube fa-lg" style="color: #f20713;"></i><a href="https://www.youtube.com/@ChimChakMan_Data" target="_blank" class="boldfont">침착맨 원본박물관</a></div>
+                                </div>
+                            </div>
+                            <div class="home3">
+                                <h3 class="boldfont">정보</h3>
+                                <ul>
+                                    <li>
+                                        <p>첫 방송일</p>
+                                        <span>2023.12.19</span>
+                                    </li>
+                                    <li>
+                                        <p>총 방송 시간</p>
+                                        <span>249시간</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="group2" class="content">
+                            <div class="video_btns">
+                                <button class="video_btn boldfont">전체 동영상</button>
+                                <button class="video_btn boldfont">최신순 동영상</button>
+                                <button class="video_btn boldfont">인기순 동영상</button>
+                            </div>
+                            <div class="video">
+                                <div class="video_box"><div class="video_picture" id="thumbnail1"> <span class="replay"><i class="fa-solid fa-circle-play fa-xs"></i> 다시보기</span></div><p class="boldfont">마인크래프트 방송<br> <span class="count">조회수 1,405회</span></p></div>
+                                <div class="video_box"><div class="video_picture" id="thumbnail2"> <span class="replay"><i class="fa-solid fa-circle-play fa-xs"></i> 다시보기</span></div><p class="boldfont">12.28 방송 시작합니다.<br> <span class="count">조회수 9,405회</span></p></div>
+                                <div class="video_box"><div class="video_picture" id="thumbnail3"> <span class="replay"><i class="fa-solid fa-circle-play fa-xs"></i> 다시보기</span></div><p class="boldfont">배우 이재훈 초대석<br> <span class="count">조회수 2,405회</span></p></div>
+                                <div class="video_box"><div class="video_picture" id="thumbnail4"> <span class="replay"><i class="fa-solid fa-circle-play fa-xs"></i> 다시보기</span></div><p class="boldfont">가수 비비 초대석<br> <span class="count">조회수 9,405회</span></p></div>
+
+                                <div class="video_box"><div class="video_picture" id="thumbnail5"> <span class="replay"><i class="fa-solid fa-circle-play fa-xs"></i> 다시보기</span></div><p class="boldfont">11.12 방송 시작합니다.<br> <span class="count">조회수 12,450회</span></p></div>
+                                <div class="video_box"><div class="video_picture" id="thumbnail6"> <span class="replay"><i class="fa-solid fa-circle-play fa-xs"></i> 다시보기</span></div><p class="boldfont">11.01 방송 시작합니다.<br> <span class="count">조회수 88,545회</span></p></div>
+                                <div class="video_box"><div class="video_picture" id="thumbnail7"> <span class="replay"><i class="fa-solid fa-circle-play fa-xs"></i> 다시보기</span></div><p class="boldfont">10.12 방송 시작합니다.<br> <span class="count">조회수 12,444회</span></p></div>
+                                <div class="video_box"><div class="video_picture" id="thumbnail8"> <span class="replay"><i class="fa-solid fa-circle-play fa-xs"></i> 다시보기</span></div><p class="boldfont">공무원 충주인 초대석<br> <span class="count">조회수 99,555회</span></p></div>
+                            </div>
+                        </div>
+                        <div id="group3" class="content"> 
+                            <div class="post">
+                                <div class="post_box">
+                                    <div class="post_box_left">
+                                        <div class="circle3" id="profile3"></div>
+                                        <div class="post_title"><span class="name2 boldfont">침착맨</span><span><i class="fa-solid fa-calendar-days fa-xs"></i> 1.12</span> <span>오늘 방송 끝입니다~!</span> <span class="comment">댓글 78</span></div>
+                                        </div>
+                                        <div> <button><i class="fa-solid fa-ellipsis-vertical fa-xl"></i></button></div>
+                                </div>
+                                <div class="post_box">
+                                    <div class="post_box_left">
+                                        <div class="circle3" id="profile3"></div>
+                                        <div class="post_title"><span class="name2 boldfont">침착맨</span><span><i class="fa-solid fa-calendar-days fa-xs"></i> 1.05</span> <span>오늘 오후 7시에 삼각전략 방송합니다. <br>이따가 봐요~</span> <span class="comment">댓글 78</span></div>
+                                        </div>
+                                        <div> <button><i class="fa-solid fa-ellipsis-vertical fa-xl"></i></button></div>
+                                </div>
+                                <div class="post_box">
+                                    <div class="post_box_left">
+                                        <div class="circle3" id="profile3"></div>
+                                        <div class="post_title"><span class="name2 boldfont">침착맨</span><span><i class="fa-solid fa-calendar-days fa-xs"></i> 12.28</span> <span>오늘 오후 1시 방송합니다. 굿? 소굿</span> <span class="comment">댓글 78</span></div>
+                                        </div>
+                                        <div> <button><i class="fa-solid fa-ellipsis-vertical fa-xl"></i></button></div>
+                                </div>
+                                <div class="post_box">
+                                    <div class="post_box_left">
+                                        <div class="circle3" id="profile3"></div>
+                                        <div class="post_title"><span class="name2 boldfont">침착맨</span><span><i class="fa-solid fa-calendar-days fa-xs"></i> 11.12</span> <span>오늘 7시 방송 시작 할 예정 입니다.</span> <span class="comment">댓글 78</span></div>
+                                        </div>
+                                        <div> <button><i class="fa-solid fa-ellipsis-vertical fa-xl"></i></button></div>
+                                </div>
+                                <div class="post_box">
+                                    <div class="post_box_left">
+                                        <div class="circle3" id="profile3"></div>
+                                        <div class="post_title"><span class="name2 boldfont">침착맨</span><span><i class="fa-solid fa-calendar-days fa-xs"></i> 11.10</span> <span>방송 일정 안내드립니다.</span> <span class="comment">댓글 78</span></div>
+                                        </div>
+                                        <div> <button><i class="fa-solid fa-ellipsis-vertical fa-xl"></i></button></div>
+                                </div>
+                                <div class="post_box">
+                                    <div class="post_box_left">
+                                        <div class="circle3" id="profile3"></div>
+                                        <div class="post_title"><span class="name2 boldfont">침착맨</span><span><i class="fa-solid fa-calendar-days fa-xs"></i> 11.1</span> <span>안녕하세요? 침착맨입니다. 반가워요.</span> <span class="comment">댓글 78</span></div>
+                                        </div>
+                                        <div> <button><i class="fa-solid fa-ellipsis-vertical fa-xl"></i></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="footer-bx1">
+                        <ul>
+                            <li><img src="img/chzzk-logo3.png" alt=""></li>
+                            <li><a href="#">네이버 게임 커뮤니티 가이드</a></li>
+                            <li><a href="#">치지직 라운지</a></li>
+                            <li><a href="#">네이버 게임 고객센터</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bx2">
+                        <p>ⓒ NAVER Corp.</p>
+                        <ul> 
+                            <li><a href="#">도움말</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#"> 개인정보 처리방침</a></li>
+                            <li><a href="#"> 청소년 보호 정책</a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+            <script>
+                function toggleTab(groupId) {
+                    var group = document.getElementById(groupId);
+                    var tabs = document.getElementsByClassName('content');
+
+                    for (var i = 0; i < tabs.length; i++) {
+                        if (tabs[i] !== group) {
+                            tabs[i].style.display = 'none';
+                        }
+                    }
+
+                    group.style.display = 'block';
+                    
+
+                    group.classList.toggle('active1');
+                }
+            </script>
+        </div>
+    </main>
+</body>
+
+</html>
