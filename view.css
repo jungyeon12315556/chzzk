@@ -63,7 +63,9 @@ button {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, .1);
 }
-
+.logo{
+    cursor: pointer;
+}
 
 .list-icon,
 .search-icon{
@@ -797,6 +799,17 @@ iframe{
     color: #8ac007;
     font-size: 13px;
     cursor: pointer;
+}
+@media(max-width:720px){
+    .post{
+        padding: 5px;
+    }
+    .post_box{
+        padding: 10px 20px 7px;
+    }
+    .name2{
+        font-size: 16px;
+    }
 }
 /* ----------------------footer------------------------------ */
 footer {
