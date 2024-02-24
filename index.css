@@ -772,7 +772,7 @@ nav ul li {
         margin-left: 15px;
         position: absolute;
         height: 90vh;
-
+        overflow-x: hidden;
         overflow-y: auto;
 
 
@@ -820,7 +820,7 @@ nav ul li {
         margin-left: 5px;
         position: absolute;
         height: 90vh;
-
+        overflow-x: hidden;
         overflow-y: auto;
 
 
