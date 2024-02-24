@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="view.css">
     <title>chzzk</title>
     <script>
+        // 동영상 정렬버튼 클릭 
          $(function () {
             $(".video_btn:nth-child(1)").addClass("active");
             $(".video_btn").click(function () {
@@ -30,7 +31,7 @@
             });
 
         });
-        
+        //홈 동영상 게시물 nav 클릭 
         $(function () {
             $(".bxx").first().addClass("on");
             $(".viewbox_btn").click(function () {
@@ -50,7 +51,8 @@
             <div class="header_left">
                 <button class="list-icon"><i class="fa-solid fa-bars-staggered fa-lg" style="color: #000000;"></i></button>
                 <!-- 치지직로고 -->
-                <div>
+                <div class="logo">
+                    <a href="view.html#">
                     <svg width="96" height="26" viewBox="0 0 96 26" fill="none" xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true">
                         <path d="M20.8469 6.15599L18.4029 19.844H23.3025L25.7427 6.15599H20.8469Z" fill="black"></path>
@@ -67,7 +69,7 @@
                         <path
                             d="M67.8328 16.1842L69.6233 6.15599H64.7275L62.2834 19.844H65.4506L64.7971 23.5H69.6968L71 16.1842H67.8328Z"
                             fill="black"></path>
-                    </svg>
+                    </svg></a>
                 </div>
             </div>
             <div class="header_mid">
