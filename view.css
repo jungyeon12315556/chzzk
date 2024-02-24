@@ -33,6 +33,7 @@ button {
     font-weight: 400;
 }
 
+
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
     width: 10px;
@@ -66,7 +67,37 @@ button {
 .logo{
     cursor: pointer;
 }
+/* 모바일시 서치버튼 */
+#search_2{
+    display: none;
+    margin: 0 auto;
+    background: rgba(0,255,163,.9);;
+    padding: 10px;
+    position: relative;
+}
+.closeBtn2{
+    position: absolute;
+     right: 10px;
+    top: 10%;
+    font-size: 16px;
+}
+#search_2>form>input {
+    width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    padding-left: 40px;
+    transition: 0.8s;
 
+}
+#search_2 form{
+    position: relative;
+}
+#search_2 .fa-search{
+    position: absolute;
+    top: 13px;
+    left: 10px;
+}
+/* 모바일시 서치버튼 */
 .list-icon,
 .search-icon{
     display: none;
@@ -265,11 +296,27 @@ button {
     align-items: center;
     margin: 15px 0 15px 10px;
     font-size: 13px;
+    cursor: pointer;
 }
 .services i {
     margin-right: 10px;
 }
-
+@media(max-width:720px){
+    .circle {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    
+    
+    
+    }
+    .streamerstitle{
+        font-size: 16px;
+    }
+    .services{
+        font-size: 15px;
+    }
+}
 /* ============container=========== */
 .container{
     width: 100%;
