@@ -683,7 +683,7 @@ iframe{
     
     .youtubes{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
        
     }
     .youtube{
@@ -693,7 +693,6 @@ iframe{
         flex-wrap: nowrap;
         background-color: rgba(0, 0, 0, .8);
         padding:  2px 3px;
-        margin: 0 2px;
         border-radius: 10px;
     
     }
