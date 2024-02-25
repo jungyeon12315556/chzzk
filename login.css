@@ -1,0 +1,199 @@
+/* 전반적인 스타일 */
+body {
+    margin: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow-x: hidden;
+    background: #eee !important;
+
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.boldfont {
+    font-family: "Sandoll Nemony2" !important;
+    font-weight: 400;
+}
+
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 163, .9);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 163, .9);
+}
+
+/* ------main----- */
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.back_btn a {
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    color: rgba(0, 255, 163, .9);
+    font-size: 30px;
+}
+
+.wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 260px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.form-signin {
+    max-width: 380px;
+    padding: 15px 35px 45px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form-signin-heading,
+.checkbox,
+.find {
+    margin-bottom: 30px;
+}
+
+
+
+.form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+input[type="text"] {
+    margin-bottom: 5px;
+
+}
+
+input[type="password"] {
+    margin-bottom: 20px;
+}
+
+.checkbox{
+    font-size: 13px;
+}
+.submit_btn{
+   width: 300px;
+   height: 50px;
+    background-color: rgba(0, 255, 163, .9);
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.find a{
+    display: inline-block;
+    margin: 5px;
+    font-size: 13px;
+}
+.find1::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, .2);
+    margin: 0 0 4px 15px;
+    vertical-align: bottom;
+}
+.find a::after:nth-last-child(){
+    display: none;
+}
+.twitch{
+    width: 300px;
+    height: 50px;
+    background-color: #9146ff;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #f1f1f1;
+    margin-bottom: 5px;
+}
+.naver{
+    width: 300px;
+    height: 50px;
+    background-color: #1ec800;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #f1f1f1;
+    margin-bottom: 5px;
+}
+.kakao{
+    width: 300px;
+    height: 50px;
+    background-color: #fee500;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #f1f1f1;
+    margin-bottom: 5px;
+}
+.apple{
+    width: 300px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #f1f1f1;
+
+}
+i{
+    margin-right: 5px;
+}
+@media(max-width:720px){
+    .back_btn a {
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        color: rgba(0, 255, 163, .9);
+        font-size: 20px;
+    }
+}

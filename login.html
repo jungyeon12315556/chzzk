@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- 웹폰트링크1 -->
+     <script type="module"
+     src="https://8fl3k30sy0.execute-api.ap-northeast-2.amazonaws.com/v1/api/fontstream/djs/?sid=gAAAAABlt8eAq5boLnwHnqiThhONDTvODUMKZqGoaBVenG_PwuUBvpZ5aY71zu2u-iqhffTwqJ663ng__vGVM0OVyhpl4f07oCSqLhGvo_GFX3YT53IONTBycJU3oD1G_kfShonhHHht_KoEHqS__8aIxyN6h4Oyv3P6xDO6LRLiIJ7VsKk3zOiG5-NXNFluSGkEO9P-HCglL6SheBOsoa5B9VYL6YsfS_loUSkyo0oBJDKE4zOgAg59rN8grGdC0LXDaOfBit1-"
+     charset="utf-8"></script>
+    <!-- 구글웹폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/f1e3afabbc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="login.css">
+    <title>chzzk-login</title>
+</head>
+<body>
+    <main>
+        <button class="back_btn"><a href="view.html"><i class="fa-solid fa-arrow-left fa-xl"></i></a></button>
+        <div class="wrapper">
+            <form class="form-signin">       
+              <div class="logo"><img src="img/logo.png" alt=""></div>
+              <input type="text" class="form-control" name="username" placeholder="아이디"/>
+              <input type="password" class="form-control" name="password" placeholder="비밀번호"/>      
+              <label class="checkbox">
+                <input type="checkbox" value="remember-login" id="loginKeep" name="loginKeep"> 로그인 상태 유지
+                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> 아이디 저장
+              </label>
+              <button class="submit_btn boldfont" type="submit">로그인</button> 
+              <div class="find">
+                <a href="#" class="find1">아이디 찾기</a>
+                <a href="#" class="find1">비밀번호 찾기</a>
+                <a href="#">회원가입</a>
+                </div>  
+                <button class="twitch boldfont"><i class="fa-brands fa-twitch"></i> 트위치로 로그인</button>
+                <button class="naver boldfont"><i class="fa-brands fa-neos"></i>네이버로 로그인</button>
+                <button class="kakao boldfont"><i class="fa-regular fa-comment"></i>카카오로 로그인</button>
+                <button class="apple boldfont"><i class="fa-brands fa-apple"></i>애플로 로그인</button>
+            </form>
+          </div>
+    </main>
+</body>
+</html>
